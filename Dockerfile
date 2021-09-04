@@ -4,10 +4,10 @@ RUN apt update && apt upgrade -y
 RUN apt install git curl python3-pip ffmpeg -y
 
 RUN cd /
-RUN git clone https://github.com/VASU-XD/Video.git
+RUN git clone https://github.com/AsmSafone/VideoPlayerBot.git
 
-RUN cd Video
-WORKDIR /Video
+RUN cd VideoPlayBot
+WORKDIR /VideoPlayBot
 
 RUN pip3 install -U pip
 RUN pip3 install -U -r requirements.txt
