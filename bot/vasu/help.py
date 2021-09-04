@@ -1,21 +1,3 @@
-"""
-VideoPlayerBot, Telegram Video Chat Bot
-Copyright (c) 2021  Asm Safone <https://github.com/AsmSafone>
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU Affero General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU Affero General Public License for more details.
-
-You should have received a copy of the GNU Affero General Public License
-along with this program.  If not, see <https://www.gnu.org/licenses/>
-"""
-
 import asyncio
 from config import Config
 from pyrogram import Client, filters
@@ -24,7 +6,7 @@ from pyrogram.errors import MessageNotModified
 
 CHAT_ID = Config.CHAT_ID
 USERNAME = Config.BOT_USERNAME
-HOME_TEXT = "👋🏻 **Hi [{}](tg://user?id={})**,\n\nI'm **Video Player Bot**. \nI Can Stream Videos On Telegram Voice Chat. Made With ❤️ By @xxvasu 😉!"
+HOME_TEXT = "👋🏻 **Hi [{}](tg://user?id={})**,\n\nI'm **Video Player Bot**. \nI Can Stream Videos On Telegram Voice Chat. Made With ❤️ By @AsmSafone 😉!"
 HELP_TEXT = """
 🏷️ --**Setting Up**-- :
 
@@ -46,7 +28,7 @@ HELP_TEXT = """
 \u2022 `/endstream` - end stream and left vc
 
 © **Powered By** : 
-**@TrixieMusic | @xxvasu** 👑
+**@AsmSafone | @SafoTheBot** 👑
 """
 
 
@@ -55,12 +37,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
     if query.data=="help":
         buttons = [
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/TrixieMusic"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/IndicSupport"),
+                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
+                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/TrixieMusic/3"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/V1SU/STREAM"),
+                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
+                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/VideoPlayerBot"),
             ],
             [
                 InlineKeyboardButton("BACK HOME", callback_data="home"),
@@ -82,12 +64,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("HOW TO USE", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/TrixieMusic"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/IndicSupport"),
+                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
+                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/TrixieMusic/3"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/V1SU/STREAM"),
+                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
+                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/VideoPlayerBot"),
             ],
             [
                 InlineKeyboardButton("CLOSE MENU", callback_data="close"),
@@ -117,12 +99,12 @@ async def start(client, message):
                 InlineKeyboardButton("HOW TO USE", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/TrixieMusic"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/IndicSupport"),
+                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
+                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/TrixieMusic/3"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/V1SU/STREAM"),
+                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
+                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/VideoPlayerBot"),
             ],
             [
                 InlineKeyboardButton("CLOSE MENU", callback_data="close"),
@@ -135,12 +117,12 @@ async def start(client, message):
 async def help(client, message):
     buttons = [
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/TrixieMusic"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/IndicSupport"),
+                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
+                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/TrixieMusic/3"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/V1SU/STREAM"),
+                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
+                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/VideoPlayerBot"),
             ],
             [
                 InlineKeyboardButton("BACK HOME", callback_data="home"),
