@@ -143,7 +143,6 @@ async def help(client, message):
                 InlineKeyboardButton("SOURCE CODE", url="https://github.com/V1SU/STREAM"),
             ],
             [
-            [
                 InlineKeyboardButton("BACK HOME", callback_data="home"),
                 InlineKeyboardButton("CLOSE MENU", callback_data="close"),
             ]
