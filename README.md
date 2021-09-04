@@ -15,7 +15,7 @@
 An Telegram Bot By [@V1SU](https://t.me/xxvasu) To Stream Videos in Telegram Voice Chat.
 
 
-## Deploy To Heroku
+## Deploy To Heroku:
 
 <p><a href="https://heroku.com/deploy?template=https://github.com/V1SU/STREAM"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a></p>
 
